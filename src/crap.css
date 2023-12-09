@@ -1,0 +1,86 @@
+.FancyButton {
+  box-shadow: var(--focus-shadow), 0px 0px 0px 2px hsl(var(--surface)),
+    0px 0px 0px 3px hsl(var(--surface-100));
+  transition: 50ms;
+}
+
+button {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+  padding: 0.75rem 1.125rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 100px;
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary-100));
+  background: hsl(var(--secondary));
+  cursor: pointer;
+}
+
+.FancyButton:hover {
+  opacity: 0.9;
+  box-shadow: var(--focus-shadow), 0px 0px 0px 4px hsl(var(--surface)),
+    0px 0px 0px 5px hsl(var(--surface-100));
+}
+
+.FancyButton:active {
+  scale: 0.96;
+  box-shadow: var(--focus-shadow), 0px 0px 0px 3px hsl(var(--surface)),
+    0px 0px 0px 4px hsl(var(--surface-100));
+}
+
+::backdrop {
+  background-color: black;
+  opacity: 0.75;
+}
+
+#newReminderDialog {
+  position: absolute;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  outline: none;
+  border: solid 1px hsl(var(--surface));
+  width: calc(100dvw - 64px);
+  padding: 0px;
+  height: 50dvh;
+  margin-left: 16px;
+  margin-top: auto;
+  margin-bottom: 128px;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+#newReminderDialog h2 {
+  position: relative;
+  left: 50%;
+  translate: -100% 0px;
+  padding: 0px;
+}
+
+#newReminderDialog input {
+  background: hsl(var(--surface));
+  font-size: 1.125rem;
+}
+
+#newReminderDialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#newReminderDialog form button {
+  justify-content: center;
+}
+
+.CloseButton {
+  padding: 12px;
+  background: hsl(var(--surface));
+  box-shadow: none;
+  border: none;
+  fill: hsl(var(--foreground));
+  opacity: 0.5;
+  margin-bottom: 0px;
+}

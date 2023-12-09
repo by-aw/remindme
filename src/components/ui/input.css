@@ -1,0 +1,23 @@
+input {
+  display: flex;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid hsl(var(--input));
+  background: hsl(var(--surface));
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--foreground));
+}
+
+input::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+input:focus,
+input:focus-visible {
+  outline: none;
+  box-shadow: 
+  0px 4px 7px 0px rgba(168, 16, 144, 0.3), 
+  0px 0px 0px 2px hsl(var(--surface)),
+  0px 0px 0px 3px hsl(var(--surface-100));
+}

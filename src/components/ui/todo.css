@@ -1,0 +1,36 @@
+.Todo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: hsl(var(--surface));
+}
+
+.Todo p {
+  overflow: hidden;
+}
+
+.RoundedTop {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.RoundedBottom {
+  border-radius: 0px;
+}
+
+.Check {
+  background: hsl(var(--primary));
+  border-radius: 12px;
+  padding: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.Checked {
+  fill: hsl(var(--primary-foreground));
+}
+
+.Unchecked {
+  background-color: hsl(var(--surface-100));
+  fill: none;
+}

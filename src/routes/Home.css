@@ -1,0 +1,76 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  color: hsl(var(--foreground));
+  align-items: start;
+  padding: 0px 16px;
+  gap: 24px;
+  height: 100dvh;
+}
+
+h1 {
+  font-family: Instrument Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0px 8px;
+  padding-top: 32px;
+}
+
+h2 {
+  padding: 0px 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.SectionRow {
+  flex-direction: row;
+  align-items: center;
+}
+
+.FancyButton {
+  visibility: hidden;
+  padding: 12px;
+  fill: hsl(var(--primary));
+  align-self: center;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+input:not([value=""]) + .FancyButton{
+  visibility: visible;
+}
+
+.RoundedAll {
+  border-radius: 16px;
+}
+
+.RoundedBottom {
+  border-radius: 0px 0px 16px 16px;
+}
+
+.NewReminderForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.OptionsButton{
+  text-indent: -999px;
+  position: relative;
+  width: min-content;
+  top: -50%;
+  left: 100%;
+  translate: -100% 0%;
+  background: transparent;
+  border: none;
+  fill: hsl(var(--foreground));
+}
+
+dialog{
+  color: hsl(var(--foreground));
+}

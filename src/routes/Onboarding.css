@@ -1,0 +1,43 @@
+body {
+  padding: 0px 16px;
+}
+
+.Onboarding {
+  display: flex;
+  flex-direction: column;
+  color: hsl(var(--foreground));
+  font-family: "Inter", system-ui;
+  align-items: center;
+  justify-content: space-between;
+  height: 100dvh;
+}
+
+.Header {
+  width: fit-content;
+  text-align: center;
+  margin-top: 16px;
+}
+
+form {
+  width: 100%;
+}
+
+.Logo {
+  fill: hsl(var(--foreground));
+  width: 4.75rem;
+  height: 4.75rem;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Instrument Sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.FancyButton{
+  margin-bottom: 32px;
+}
