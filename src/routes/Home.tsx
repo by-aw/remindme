@@ -1,10 +1,9 @@
 import Todo from "@/components/ui/todo";
 import "./Home.css";
 import Add from "@/components/svg/add";
-import Close from "@/components/svg/close";
 import { Input } from "@/components/ui/input";
 import { db } from "@/db";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { cn } from "@/lib/utils";
 import Button from "@/components/ui/button";

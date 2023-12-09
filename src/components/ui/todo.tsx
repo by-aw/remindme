@@ -18,7 +18,7 @@ export default function Todo({ reminder, className }: TodoProps) {
     db.reminders.delete(reminder.id!);
   }
   function handleDragEvent(
-    event: MouseEvent | TouchEvent | PointerEvent,
+    _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
   ) {
     const offset = info.offset.x;
